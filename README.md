@@ -1,4 +1,5 @@
-# Hello world
-
-如果这个模板有用，请点一个🌟吧！
-[Github Repo](https://github.com/Codesire-Deng/TemplateRepoCxx)
+## 简介
+- 使用std::future实现异步执行任务并返回任务的执行结果。
+- 采用std::move的方式传递lamda表达式生成的匿名对象，避免默认的拷贝构造，提高性能。
+- 支持线程的任务窃取机制，公共队列缓存外部提交的任务，每个线程有一个双端队列可供内部消化和外部窃
+取，实现了任务处理层面的负载均衡。
